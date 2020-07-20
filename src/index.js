@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import Users from "./components/users";
+import users from "./mock/users";
+import WithCheckBox from "./components/checkbox";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <WithCheckBox></WithCheckBox>
+    <Users users={users}> </Users>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
